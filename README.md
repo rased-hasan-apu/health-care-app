@@ -1,7 +1,7 @@
 # The project was build with react,react-route-dom,react-bootstrapped add Vanilla CSS.
 #   This project build with firebase. It Authorize with Google and simple email password login. 
 # visit the site link : https://health-care-app-e66ce.web.app/  2nd link : https://health-care-app-e66ce.firebaseapp.com/
-## This is simple health and expart doctors information website.
+## This is a simple doctors information AND health information services site.
 ## In this website there is 4 nav link
 1. Home 
 2. About
