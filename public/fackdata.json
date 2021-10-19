@@ -1,0 +1,106 @@
+{
+  "Sedule":[
+    {
+     "key": "1",
+     "name":"dr.Md faruk",
+     "job": "medicine specialist",
+     "price":"$15.00",
+     "time" : "10 am to 3pm",
+     "review" : "230 peoples",
+     "img":"https://i0.wp.com/www.finddoctor24.com/wp-content/uploads/2017/11/Cancer-Doctor-List.jpg?resize=678%2C453&ssl=1"
+    },
+  {
+     "key": "2",
+     "name":"dr.kalam",
+     "job": "eye specilist",
+     "price":"$15.00",
+     "time" : "10 am to 3pm",
+     "review" : "230 peoples",
+     "img":"http://www.dishaeye.org/blog/wp-content/uploads/2019/05/eye-test-1024x683.jpg"
+    },
+  {
+     "key": "3",
+     "name":"dr.malik",
+     "job": "psychologist",
+     "price":"$15.00",
+     "time" : "10 am to 3pm",
+     "review" : "230 peoples",
+     "img":"https://www.couplepsychologist.com/wp-content/uploads/2020/03/Article-18-Crises-Counselor.jpg"
+    },
+  {
+     "key": "4",
+     "name":"dr.nasir",
+     "job": "bone specialist",
+     "price":"$15.00",
+     "time" : "10 am to 3pm",
+     "review" : "234 people",
+     "img":"https://mtmweb.biz/wp-content/uploads/2012/05/accident-adult-african-1539678.jpg"
+    },
+  {
+     "key": "5",
+     "name":"dr.sumit",
+     "job": "cardiologyst",
+     "price":"$15.00",
+     "time" : "10 am to 3pm",
+     "review" : "230 peoples",
+     "img":"https://www.madrehealthcare.com/wp-content/uploads/2019/07/Untitled-design-49-1.png"
+    },
+  {
+     "key": "6",
+     "name":"dr.aumit",
+     "job": "neurologist",
+     "price":"$15.00",
+     "time" : "10 am to 3pm",
+     "review" : "230 peoples",
+     "img":"https://freshysites.com/wp-content/uploads/Popular-Neurologist-Web-Designs.jpg"
+    }
+  ],
+
+  "Doctor":[
+    {
+     "key": "1",
+     "name":"dr.jesmin jessy",
+     "job":"medicine specialist",
+     "img":"https://thumbs.dreamstime.com/b/smiling-female-doctor-holding-medical-records-lab-coat-her-office-clipboard-looking-camera-56673035.jpg"
+    },
+  {
+     "key": "2",
+     "name":"dr.Omure faruk",
+     "job":"cardiologyst",
+     "img":"https://www.madrehealthcare.com/wp-content/uploads/2019/07/Untitled-design-49-1.png"
+    },
+  {
+     "key": "3",
+     "name":"dr.Akib al mohotam",
+     "job":"eye specialist",
+     "img":"http://www.dishaeye.org/blog/wp-content/uploads/2018/03/eye-specialist-in-south-Kolkata.jpg"
+    },
+  {
+     "key": "4",
+     "name":"dr.Md somit",
+     "job":"Fitness specialist",
+     "img":"https://media.defense.gov/2013/Mar/10/2000069007/780/780/0/121020-Z-TN903-038.JPG"
+    }
+  ],
+  "Directors":[
+    {
+      "img":"http://jituchauhan.com/site-templates/medical-website-template/00_haircare/images/team-img-1.jpg",
+      "name":"dr.poramanik"
+    },
+    {
+      "img":"http://jituchauhan.com/site-templates/medical-website-template/00_haircare/images/team-img-2.jpg",
+      "name":"dr.switey "
+    },
+    {
+      "img":"http://jituchauhan.com/site-templates/medical-website-template/00_haircare/images/team-img-3.jpg",
+      "name":"dr.Akib "
+    },
+    {
+      "img":"https://www.madrehealthcare.com/wp-content/uploads/2019/07/Untitled-design-49-1.png",
+      "name":"dr.Lamim "
+    }
+  ]
+  
+
+}
+
