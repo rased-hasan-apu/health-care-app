@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
-import { NavLink,useLocation,useHistory } from 'react-router-dom';
+import { useLocation,useHistory } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth/useAuth';
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword} from "firebase/auth";
 import background from '../../Images/loginn.jpg'
@@ -116,7 +116,6 @@ const Register = () => {
   <Button className="btn-primary button m-3"><i className="fab fa-facebook"></i></Button>
   <Button className="btn-primary button m-3"><i className="fab fa-github"></i></Button>
   </div>
-  <div><NavLink to="/login"><p className="text-center  ">Alredy have an account?</p></NavLink></div>
 </form>
                       </div>
                       
