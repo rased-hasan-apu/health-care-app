@@ -32,17 +32,11 @@ const Header = () => {
        
         
       </ul>
-      {
-      user?.email?
-      <img style={{borderRadius:'50%', height:'35px' }}src={user?.photoURL} alt="" />:
-      <NavLink to="/login"className="btn-style"><i class="fas fa-user-circle"></i> log in</NavLink>
-      
-    }
   <strong className="mx-1">{user?.displayName} </strong>
       {user?.email?
 
       <Button onClick={logOut} className="text-white"><i class="fas fa-sign-out-alt"></i> logOut</Button>:
-        <  NavLink to="/registration" className="btn-style"><i className="fas fa-users "></i> Register</NavLink>
+        <  NavLink to="/registration" className="btn-style"><i className="fas fa-users "></i> Register/login</NavLink>
       
     }
 
