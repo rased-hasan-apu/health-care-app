@@ -9,7 +9,7 @@ const useFirebase =()=>{
     const auth =getAuth()
     const googleProvider = new GoogleAuthProvider();
    const singInUsingGoogle = ()=>{
-         signInWithPopup (auth,googleProvider)
+         return signInWithPopup (auth,googleProvider)
           .then(result=>{
               console.log(result.user)
               setUser(result.user);

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink,useLocation,useHistory } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth/useAuth';
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword} from "firebase/auth";
 import background from '../../Images/loginn.jpg'
@@ -8,6 +8,15 @@ import './Register.css'
 
 const Register = () => {
   const {singInUsingGoogle}=useAuth();
+  const location = useLocation();
+  const history = useHistory();
+  const redirect_uri =location.state?.from || '/home'
+  const handleGoogleLogin = ()=>{
+    singInUsingGoogle()
+    .then(result=>{
+       history.push(redirect_uri);
+    })
+  }
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -103,7 +112,7 @@ const Register = () => {
   <div className="text-center px-2 ">
     <strong className="text-center text-danger">{error}</strong>
   <h6>or Registration with</h6>
-  <Button onClick={singInUsingGoogle} className="btn-primary  button m-3"><i className="fab fa-google text-white"></i></Button>
+  <Button onClick={handleGoogleLogin} className="btn-primary  button m-3"><i className="fab fa-google text-white"></i></Button>
   <Button className="btn-primary button m-3"><i className="fab fa-facebook"></i></Button>
   <Button className="btn-primary button m-3"><i className="fab fa-github"></i></Button>
   </div>

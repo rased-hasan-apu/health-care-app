@@ -9,6 +9,8 @@ import Contruct from './components/Contruct/Contruct';
 import Service from './components/Services/Service';
 import  NotFound  from './components/NotFound/NotFound';
 import AuthProvider from './Hooks/AuthProvider/AuthProvider';
+import Booking from './components/Booking/Booking';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 
 
@@ -38,6 +40,9 @@ function App() {
         <Route path="/services">
          <Service></Service>
         </Route>
+        <PrivateRoute path="/booking/:serviceId">
+          <Booking></Booking>
+        </PrivateRoute>
         <Route path="*">
           <NotFound></NotFound>
         </Route>

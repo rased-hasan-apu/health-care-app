@@ -29,11 +29,18 @@ const Header = () => {
         <li className="nav-item">
           <NavLink  to="/contract" className="nav-link" >Contract</NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink  to="/categories" className="nav-link" >Categories</NavLink>
+        </li>
        
         
       </ul>
+  
   <strong className="mx-1">{user?.displayName} </strong>
-      {user?.email?
+  <strong  className="mx-1">{user?.email}</strong>
+  
+  {
+    user?.email?
 
       <Button onClick={logOut} className="text-white"><i class="fas fa-sign-out-alt"></i> logOut</Button>:
         <  NavLink to="/registration" className="btn-style"><i className="fas fa-users "></i> Register/login</NavLink>

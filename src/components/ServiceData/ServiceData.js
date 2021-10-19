@@ -1,9 +1,10 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import './ServiceData.css'
 
 const ServiceData = (props) => {
-        const {img,name,time,job}=props.service;
+        const {img,name,time,job,key}=props.service;
         
     return (
         <div>
@@ -16,7 +17,10 @@ const ServiceData = (props) => {
           <Card.Text>
              deration:{time}
           </Card.Text>
+          <NavLink to={`/booking/${key}`}>
           <Button className="btn-pramery"> view detils </Button>
+          </NavLink>
+          
           
         </Card.Body> 
       </Card>
