@@ -36,8 +36,8 @@ const Header = () => {
         
       </ul>
   
-  <strong className="mx-1">{user?.displayName} </strong>
-  <strong  className="mx-1">{user?.email}</strong>
+  <strong className="mx-1">name:{user?.displayName} </strong>
+  <strong  className="mx-1">Email:{user?.email}</strong>
   
   {
     user?.email?

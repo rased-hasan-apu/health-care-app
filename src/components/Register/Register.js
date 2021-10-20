@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useLocation,useHistory } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth/useAuth';
-import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword} from "firebase/auth";
+import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile} from "firebase/auth";
 import background from '../../Images/loginn.jpg'
 import './Register.css'
 
@@ -20,6 +20,7 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [name,setName] = useState('');
   const [isLogin, setIsLogin] = useState(false);
 
   const auth = getAuth();
@@ -71,20 +72,29 @@ const Register = () => {
         setError(error.message);
       })
   }
-
+ 
+  const handleNameChange = e => {
+    setName(e.target.value);
+  }
   const registerNewUser = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then(result => {
         const user = result.user;
         console.log(user);
         setError('');
+        setUserName();
       })
       .catch(error => {
         setError(error.message);
       })
   }
  
- 
+ // update user 
+ //update user name
+ const setUserName = () => {
+  updateProfile(auth.currentUser, { displayName: name })
+  .then(result =>{})
+}
  
 
     return (
@@ -95,6 +105,12 @@ const Register = () => {
                   <h3 className="text-center text-white">{isLogin?'Login':'Register'}</h3>
                   <form onSubmit={handleRegistration}>
   <div className="mb-2 px-2">
+  {!isLogin && <div className="row">
+          <label htmlFor="inputAddress" className="col-sm-2 col-form-label">Name</label>
+          <div className="col-sm-10">
+            <input type="text" className="form-control" onBlur={handleNameChange} id="inputAddress" placeholder="Enter Your Name" />
+          </div>
+        </div>}
     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
     <input onBlur={handleEmailChange} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp "placeholder="email or phone number"required></input>
   </div>
